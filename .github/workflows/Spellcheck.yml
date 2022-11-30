@@ -10,3 +10,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: rojopolis/spellcheck-github-actions@0.28.0
       name: Spellcheck
+      with:
+        source_files: _data/*
+        task_name: Markdown
+        output_file: spellcheck-output.txt
